@@ -13,6 +13,10 @@
 		848E45B21F0F7B5300B517C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848E45B11F0F7B5300B517C7 /* Assets.xcassets */; };
 		848E45B51F0F7B5300B517C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848E45B31F0F7B5300B517C7 /* LaunchScreen.storyboard */; };
 		848E45C01F0F7B5300B517C7 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E45BF1F0F7B5300B517C7 /* TestAppTests.swift */; };
+		B286BD051F14EE91004AD540 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286BD011F14EE91004AD540 /* Brain.swift */; };
+		B286BD061F14EE91004AD540 /* InputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286BD021F14EE91004AD540 /* InputAdapter.swift */; };
+		B286BD071F14EE91004AD540 /* OutputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286BD031F14EE91004AD540 /* OutputAdapter.swift */; };
+		B286BD081F14EE91004AD540 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286BD041F14EE91004AD540 /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		848E45BB1F0F7B5300B517C7 /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848E45BF1F0F7B5300B517C7 /* TestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppTests.swift; sourceTree = "<group>"; };
 		848E45C11F0F7B5300B517C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B286BD011F14EE91004AD540 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		B286BD021F14EE91004AD540 /* InputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputAdapter.swift; sourceTree = "<group>"; };
+		B286BD031F14EE91004AD540 /* OutputAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputAdapter.swift; sourceTree = "<group>"; };
+		B286BD041F14EE91004AD540 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		848E45A91F0F7B5300B517C7 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				848E45CA1F0F7B6E00B517C7 /* App */,
 				848E45AA1F0F7B5300B517C7 /* AppDelegate.swift */,
 				848E45AC1F0F7B5300B517C7 /* ViewController.swift */,
 				848E45AE1F0F7B5300B517C7 /* Main.storyboard */,
@@ -94,6 +103,17 @@
 				848E45C11F0F7B5300B517C7 /* Info.plist */,
 			);
 			path = TestAppTests;
+			sourceTree = "<group>";
+		};
+		848E45CA1F0F7B6E00B517C7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B286BD011F14EE91004AD540 /* Brain.swift */,
+				B286BD021F14EE91004AD540 /* InputAdapter.swift */,
+				B286BD031F14EE91004AD540 /* OutputAdapter.swift */,
+				B286BD041F14EE91004AD540 /* Protocols.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				848E45AD1F0F7B5300B517C7 /* ViewController.swift in Sources */,
+				B286BD051F14EE91004AD540 /* Brain.swift in Sources */,
+				B286BD061F14EE91004AD540 /* InputAdapter.swift in Sources */,
+				B286BD081F14EE91004AD540 /* Protocols.swift in Sources */,
 				848E45AB1F0F7B5300B517C7 /* AppDelegate.swift in Sources */,
+				B286BD071F14EE91004AD540 /* OutputAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +430,7 @@
 				848E45C61F0F7B5300B517C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		848E45C71F0F7B5300B517C7 /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +439,7 @@
 				848E45C91F0F7B5300B517C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
